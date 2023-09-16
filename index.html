@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="user panel manager app for best practice" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Googel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>User Management Panel</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-panel">
+            <!-- top bar -->
+            <div class="top-bar">
+                <a href="#" class="menu"><img src="img/menus.png" width="23" height="23" alt="menu" /></a>
+
+                <div class="search-input">
+                    <img src="img/loupe.png" width="13" height="13" alt="search" />
+                    <label for="search"></label>
+                    <input type="search" class="search-input" id="search" name="search" placeholder="Search..." />
+                </div>
+
+                <div class="admin-profile">
+                    <div class="top-profile-pic"></div>
+                    <p>Mishel Shwartz <img src="img/right-arrow.png" width="7" height="7" alt="arrow"></p>
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="main-content">
+                <!-- side nav bar -->
+                <nav class="panel-nav">
+                    <div class="icons">
+                        <ul>
+                            <li><img class="menu-btn" src="img/edit.png" alt="profile" /></li>
+                            <li> <img class="menu-btn" src="img/pie-chart.png" alt="statistics" /></li>
+                            <li>  <img class="menu-btn" src="img/user.png" alt="users" /></li>
+                            <li> <img class="menu-btn" src="img/envelope.png" alt="envelope" /></li>
+                            <li><img class="menu-btn" src="img/setting-lines.png" alt="setting" /></li>
+                        </ul>
+                    
+                    </div>
+                </nav>
+
+                <div class="main-display-info">
+                    <!-- content -->
+
+                    <!-- profile artical -->
+                    <article id="profile" class="content">
+                        <div class="main-profile-content">
+                            <div class="title profile">
+                                <h1>Profile Dashboard</h1>
+                                <button><img src="img/camera-cover.png" alt="change cover">Change Cover</button>
+                            </div>
+                            <div class="top-profile">
+                            </div>
+                            <div class="profile-boxes">
+                                <div class="personal-details">
+                                    <div class="photo-profile"></div>
+                                    <img class="photo-change" src="img/camera.png" alt="change photo">
+                                    <h2>Mishel Shwartz</h2>
+                                    <p>Microsoft Inc.</p>
+                                    <hr>
+                                    <p>My personal details</p>
+                                    <hr>
+                                    <p> About my company</p>
+                                    <hr>
+                                    <p>My contact ways</p>
+                                    <hr>
+                                    <button class="public-profile-btn profile-btn">My Public Profile</button>
+                                    <button class="my-website-btn profile-btn">My Website</button>
+                                </div>
+                                <div class="account-setting">
+                 <div class="account-tab">
+                                    <a href="">Account Setting</a>
+                                </div>
+                                    <hr>
+                                    <form class="profile-form" action="">
+                                        <div>
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" name="firstName" id="firstName">
+                                        </div>
+                                        <div>
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" name="lastName" id="lastName">
+                                        </div>
+                                        <div>
+                                            <label for="profileEmail">Email Address</label>
+                                            <input type="text" name="profileEmail" id="profileEmail">
+                                        </div>
+                                        <div>
+                                            <label for="phone">Phone Number</label>
+                                            <input type="text" name="phone" id="phone">
+                                        </div>
+                                        <div>
+                                            <label for="city">City</label>
+                                            <input type="text" name="city" id="city">
+                                        </div>
+                                        <div>
+                                            <label for="state">State</label>
+                                            <input type="text" name="state" id="state">
+                                        </div>
+                                        <div>
+                                            <label for="country">Country</label>
+                                            <input type="text" name="country" id="country">
+                                        </div>
+                                        <div>
+                                            <label for="postCode">Post Code</label>
+                                            <input type="text" name="postCode" id="postCode">
+                                        </div>
+
+                                        <p class="profileUpdatedMassage">Your profile updated successfully.</p>
+                                    </form>
+                                    <hr>
+                                    <button class="update-btn">Update</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- statistics artical -->
+                    <article id="statistics" class="content">
+                        <div class="title main">
+                            <h1>Statistics</h1>
+                        </div>
+                        <div class="massage">
+                            <h3>No statistics available </h3>
+                        </div>
+                    </article>
+
+                    <!-- users artical -->
+                    <article id="users" class="content">
+                        <div class="title users">
+                            <h1>User Panel Management</h1>
+                            <button class="add-user-btn">ADD USER +</button>
+                        </div>
+
+                        <!-- main box area -->
+                        <div class="user-boxes">
+                            <!-- users boxes list came from api -->
+                        </div>
+                    </article>
+
+                    <!-- envelope artical -->
+                    <article id="envelope" class="content">
+                        <div class="title">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="massage">
+                            <h3>No information available </h3>
+                        </div>
+
+                    </article>
+
+                    <!-- setting artical -->
+                    <article id="setting" class="content">
+                        <div class="title">
+                            <h1>Setting</h1>
+                        </div>
+                        <div class="massage">
+                            <h3>Setting not available </h3>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- add user popup -->
+        <div class="add-popup model">
+            <div class="close-add-popup">
+                <img src="img/close.png" width="15" height="15" alt="close" />
+            </div>
+
+            <h2>Adding User Panel</h2>
+
+            <div class="inputs-add-user">
+                <label for="fullName" class="add-label">Full Name</label>
+                <input type="text" class="add-input" name="fullName" id="fullName" />
+                <label for="email" class="add-label">Email Address</label>
+                <input type="email" class="add-input" name="email" id="email" />
+                <label for="userName" class="add-label">User Name</label>
+                <input type="text" class="add-input" name="userName" id="userName" />
+            </div>
+            <button class="adding-btn">Add User</button>
+        </div>
+
+        <!-- edit user popup -->
+        <div class="edit-popup model">
+            <div class="close-edit-popup">
+                <img src="img/close.png" width="15" height="15" alt="close" />
+            </div>
+            <div class="modal-content">
+                <!-- getting information about user with javascript here -->
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

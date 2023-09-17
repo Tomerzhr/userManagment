@@ -549,3 +549,54 @@ h3 {
   position: relative;
   margin: 30px;
 }
+
+/* media query */
+
+@media (min-width: 320px) and (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .search-input {
+    width: 30vw;
+  }
+  .profile-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .personal-details {
+    width: 85%;
+  }
+  .photo-change {
+    right: 110px;
+  }
+  .account-setting {
+    width: 85%;
+  }
+  .profile-form {
+    grid-template-columns: 100%;
+  }
+  .profile-form input {
+    margin: 5px 0 10px 0;
+  }
+  .title {
+    flex-direction: column;
+    align-items: baseline;
+    margin: 0;
+  }
+  .massage {
+    width: 85%;
+  }
+  .add-user-btn {
+    margin-bottom: 20px;
+  }
+  .user-boxes {
+    margin-bottom: 20px;
+    margin-left: -5px;
+    grid-template-columns: auto;
+  }
+
+  .model {
+    width: 90vw;
+  }
+}
